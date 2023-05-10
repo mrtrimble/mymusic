@@ -29,10 +29,14 @@ const logout = async () => {
                    @click="logout">
           Logout
         </AppButton>
-        <AppButton v-else
-                   @click="auth.signInWithOAuth({ provider: 'github' })">
-          Sign in with Github
-        </AppButton>
+        <template v-else>
+          <AppButton @click="auth.signInWithOAuth({ provider: 'google' })">
+            Sign in with Google
+          </AppButton>
+          <AppButton @click="auth.signInWithOAuth({ provider: 'github' })">
+            Sign in with Github
+          </AppButton>
+        </template>
       </section>
     </AppContainer>
   </header>
