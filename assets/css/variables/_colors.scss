@@ -1,0 +1,10 @@
+:root {
+  --primary-color: #d4145a;
+  --primary-dark-color: #{darken(#d4145a, 5%)};
+  --accent-color: #fbb03b;
+
+  --light-color: #fbf9f3;
+  --dark-color: #333333;
+
+  --white: white;
+}
